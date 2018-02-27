@@ -4,7 +4,7 @@ from googleplaces import GooglePlaces, types, GooglePlacesError
 
 
 MAX_FETCH = 200
-google_places = GooglePlaces('AIzaSyC8IDrspn3wE_Yz8B90Sy4xhRaJYM_gmCE')
+google_places = GooglePlaces('AIzaSyCCW2z_gQ0lMuF5-HIsUlAEAb759WFZNSY')
 
 query_result = google_places.nearby_search(
         location='London, England', keyword='Fish and Chips',
