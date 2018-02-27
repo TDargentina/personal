@@ -4,11 +4,13 @@ from googleplaces import GooglePlaces, types, GooglePlacesError
 
 
 MAX_FETCH = 200
-google_places = GooglePlaces('AIzaSyAExIUtIyLjP5ZxnNPoYpiElnInkMrNJAI')
+google_places = GooglePlaces('AIzaSyC8IDrspn3wE_Yz8B90Sy4xhRaJYM_gmCE')
 
 query_result = google_places.nearby_search(
         location='London, England', keyword='Fish and Chips',
         radius=20000, types=[types.TYPE_FOOD])
+
+fetched = 0
 while fetched < MAX_FETCH:
   for place in query_result.places:
     print '[%i] %s' %(fetched, place.name)
